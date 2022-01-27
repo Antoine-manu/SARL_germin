@@ -1,0 +1,28 @@
+.admin{
+
+    @include flex(row);
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+
+    &__title{
+        margin-bottom: 2%
+    }
+    &__img{
+
+    }
+    &__text{
+
+    }
+    &__div{
+        
+        @include flex(column);
+        background-color: $secondary_bg;
+        padding: 2%;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        
+    }
+}

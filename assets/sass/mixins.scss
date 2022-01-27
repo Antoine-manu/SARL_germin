@@ -1,0 +1,4 @@
+@mixin flex($state) {
+    display: flex;
+    flex-direction: $state;
+}

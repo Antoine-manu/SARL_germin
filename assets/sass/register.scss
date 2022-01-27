@@ -1,0 +1,57 @@
+.register{
+
+    width: 100%;
+    @include flex(row);
+    &__content{
+        width: 60%;
+
+        &>div >input{
+            width: 60% ;
+            margin-top: 3%;
+        }
+    }
+
+    &__links{
+        width: 30%;
+        margin: auto;
+        margin-top: 5%;
+
+        &__btn{
+            width: 300px;
+
+            &__update{
+                padding: 2%
+            }
+        }
+
+        &__div{
+            @include flex(row);
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            
+        }
+    }
+}
+
+.login{
+    &__input{
+        width: 40%;
+        margin: auto;
+    }
+}
+@media (max-width: 1250px){
+    .register{
+        @include flex(column);
+        align-items: center;
+        &__links{
+
+            &__div{
+                @include flex(column);
+                &>a{
+                    margin-top: 5%;
+                }
+            }
+        }
+    }
+}

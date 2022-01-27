@@ -1,0 +1,135 @@
+.homediv{
+
+    @include flex(row);
+    width: 65%;
+    margin: auto;
+    margin-top: 4%;
+    &__left{
+        @include flex(column);
+        text-align: center;
+        background-color: $navbar-bg;
+        justify-content: center;
+        align-items: center;
+        &>h2{
+            color: $text-colorsecondary;
+            width: 70%;
+            
+        }
+        &>h1{
+            width:90%;
+            
+        }
+    }
+
+    &__right{
+        width: 65%;
+    }
+}
+
+.maincard{
+    @include flex(row);
+    width: 75%;
+    margin: auto;
+    margin-top: 10%;
+    justify-content: space-between;
+}
+
+.maininfo{
+    background-color: $secondary_bg;
+    width: 75%;
+    margin: auto;
+    margin-top: 15%;
+    @include flex(column);
+    flex-wrap: wrap;
+    padding: 2%;
+    &__text{
+        @include flex(row);
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        margin-top: 5%;
+        font-size: 120%;
+
+        &__img{
+            width: 50%;
+        }
+
+        &>p{
+            width: 50%;
+            justify-content: center;
+            text-align: left;
+        }
+    }
+}
+
+.secondcard{
+    @include flex(row);
+    width: 75%;
+    margin: auto;
+    margin-top: 10%;
+    justify-content: space-between;
+
+    &>.card{
+        font-size: 100%;
+        width: 18%;
+        height: 40vh;
+        &>p{
+            font-size: 100%;
+        }
+        &>a{
+            font-size: 90%;
+        }
+        &>h2{
+            font-size: 120%;
+        }
+    }
+}
+.logo_card{
+    height: 50%;
+}
+
+@media (max-width: 1250px) {
+    .maincard{
+        @include flex(column);
+
+        &>.card{
+            margin-top: 8%;
+            font-size: 100%;
+            width: 100%;
+            height: 40vh;
+        }
+    }
+    .secondcard{
+        @include flex(column);
+        &>.card{
+            margin-top: 8%;
+            font-size: 100%;
+            width: 100%;
+            height: 40vh;
+        }
+    }
+    .homediv{
+        @include flex(column);
+        &__right{
+            width: 100%;
+        }
+    }
+ }
+ @media (max-width: 800px) {
+    .maininfo{
+        &__text{
+            @include flex(column);
+            width: 100%;
+            &__img{
+                width: 100%;
+            }
+    
+            &>p{
+                width: 100%;
+                justify-content: center;
+                text-align: left;
+            }
+        }
+    }
+    
+ }

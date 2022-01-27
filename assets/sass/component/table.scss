@@ -1,0 +1,36 @@
+.table{
+    background-color: white;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    &__content{
+       
+
+    
+        &>th{
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: $color-primary;
+            color: white;
+
+            & > a {
+                color: white ;
+            }
+        }   
+        
+        
+
+        &:nth-child(even){
+            background-color: #f2f2f2;
+        }
+
+        &>th,&>td{
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+    }
+    &__content:hover{
+        background-color: #ddd;
+    }
+}

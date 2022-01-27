@@ -1,0 +1,23 @@
+.btn{
+    background-color: $color-primary;
+    border: none;
+    padding: 7px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 25px;
+    color: $btn-color_text;
+    font-weight: bold;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+.linkbtn{
+    background-color: $color-primary;
+    border: none;
+    border-radius: 25px;
+    color: $btn-color_text;
+    font-weight: bold;
+    font-size: 82%;
+    padding: 7px;
+}

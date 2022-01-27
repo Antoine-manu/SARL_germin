@@ -1,0 +1,15 @@
+.card{
+    background-color: $secondary_bg;
+    height: 45vh;
+    width: 22%;         
+    @include flex(column);
+    justify-content: space-between;
+    padding: 2%;
+
+    &>p{
+        font-size: 120%;
+    }
+    &>a{
+        font-size: 110%;
+    }
+}

@@ -1,0 +1,52 @@
+.input_control{
+    border: none;
+    text-align: center;
+    border-bottom: solid 2px $color-primary;
+    width: 100%;
+    padding: 0.8%;
+    margin-bottom: 1%;
+}
+.input_control:focus-visible{
+    outline: none;
+}
+.input__flex{
+
+    &__btn{
+        text-align: center;
+    }
+}
+.form_control{
+    border: none;
+    text-align: center;
+    background-color: rgb(233, 229, 229);
+    width: 100%;
+    padding: 0.8%;
+    border-radius: 25px;
+    margin-bottom: 3%;
+}
+.label_control{
+
+}
+.imginput{
+    cursor: pointer;
+}
+
+.input__list{
+    list-style-type: none;
+
+    &__item{
+        background-color: $secondary_bg;
+        cursor: pointer;
+        list-style-type: none;
+
+        &__link{
+
+
+        }
+    }
+}
+.select_control{
+    width: 50%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}

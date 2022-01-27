@@ -1,0 +1,15 @@
+.footer {
+    @include flex(row);
+    margin-top: 5%;
+    justify-content: space-between;
+    padding-right: 1%;
+    padding-left: 1%;
+    background-color: $navbar-bg;
+    border-top: solid 4px $color-primary;
+
+    &__links{
+        @include flex(column);
+        flex-wrap: nowrap;
+        padding: 1%;
+    }
+}

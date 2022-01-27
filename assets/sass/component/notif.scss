@@ -1,0 +1,29 @@
+.notif{
+    padding: 2%;
+    width: 40%;
+    text-align: center;
+    position: absolute;
+    top: 14%;
+    align-self: center;
+    border-radius: 20px;
+    font-weight: bold;
+    left: 0;
+    right: 0;
+
+}
+.alert{
+    background-color: #ff2f1c ;
+}
+.deleteconfirm{
+    padding: 1%;
+    width: 40%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #f7f7f7;
+}

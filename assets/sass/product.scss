@@ -1,0 +1,48 @@
+.product{
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    &_content{
+        
+        @include flex(row);
+        justify-content: space-between;
+        &_div{
+            width: 43%;
+            &__table{
+                width: 100%;
+                background-color: white;
+
+                &__title{
+                    list-style: none;
+                    @include flex(row);
+                    justify-content: space-between;
+                    background-color: $color-primary;
+                    padding: 0;
+                    padding-top: 1%;
+                    padding-bottom: 1%;
+                    &>li{
+                        &>a{
+
+                            color: white;
+                        }
+                        width: 30%;
+                        cursor: pointer;
+                    }
+                }
+                &__content{
+                    padding: 1%;
+                    text-align: justify;
+                }
+            }
+            &__title{
+
+            }
+            &__price{
+                width: 100%;
+                text-align: center;
+                font-weight: bold;
+                font-size: 130%;
+            }
+        }
+    }
+}
